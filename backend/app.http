@@ -1,0 +1,68 @@
+### 1️⃣ Signup a new user
+POST http://localhost:5000/api/v1/auth/signup
+Content-Type: application/json
+
+{
+  "name": "Test User",
+  "email": "testuser@example.com",
+  "password": "Test@123"
+}
+
+###
+
+### 2️⃣ Login user (get JWT)
+POST http://localhost:5000/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@primetrade.ai",
+  "password": "Admin@123"
+}
+
+###
+
+### 3️⃣ Get user profile (protected route)
+GET http://localhost:5000/api/v1/auth/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkBwcmltZXRyYWRlLmFpIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzYwNDM0MTI5LCJleHAiOjE3NjA1MjA1Mjl9.1LfezR8LLubcMyAgnkvE_I3JwaefOGmfG5Pvw7zjT_w
+
+###
+
+### 4️⃣ Create a task
+POST http://localhost:5000/api/v1/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkBwcmltZXRyYWRlLmFpIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzYwNDMzMDg0LCJleHAiOjE3NjA1MTk0ODR9.YclEJo6j6jJbw-_PHlCZSuPw4qmqF8DOfPxJrjjUDn0
+Content-Type: application/json
+
+{
+  "title": "Finish frontend",
+  "description": "Complete the dashboard UI",
+  "status": "pending"
+}
+
+###
+
+### 5️⃣ Get all tasks
+GET http://localhost:5000/api/v1/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkBwcmltZXRyYWRlLmFpIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzYwNDMzMDg0LCJleHAiOjE3NjA1MTk0ODR9.YclEJo6j6jJbw-_PHlCZSuPw4qmqF8DOfPxJrjjUDn0
+
+###
+
+### 6️⃣ Update a task (replace TASK_ID)
+PUT http://localhost:5000/api/v1/tasks/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkBwcmltZXRyYWRlLmFpIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzYwNDMzMDg0LCJleHAiOjE3NjA1MTk0ODR9.YclEJo6j6jJbw-_PHlCZSuPw4qmqF8DOfPxJrjjUDn0
+Content-Type: application/json
+
+{
+  "title": "Finish frontend v2",
+  "description": "Update UI with Bootstrap",
+  "status": "completed"
+}
+
+###
+
+### 7️⃣ Delete a task (replace TASK_ID)
+DELETE http://localhost:5000/api/v1/tasks/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkBwcmltZXRyYWRlLmFpIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzYwNDMzMDg0LCJleHAiOjE3NjA1MTk0ODR9.YclEJo6j6jJbw-_PHlCZSuPw4qmqF8DOfPxJrjjUDn0
+
+
+###
+GET http://localhost:5000/api/v1/auth/test
