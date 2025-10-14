@@ -167,15 +167,15 @@ Use the included Postman collection (app.http or .postman_collection.json) to te
 ![Login Page](./frontend/Images/LoginPage.png)
 
 ### 📊 Dashboard
-![Dashboard](../frontend/Images/dashboard.png)
+![Dashboard](./frontend/Images/Dashboardpage.png)
 
 ### 🛡️ Signup Page
-![Signup Page](./frontend/Images/admin-view.png)
+![Signup Page](./frontend/Images/SignupPage.png)
 
 ---
 
 ## 👨‍💻 Author
 
 Rohit Raparthi
-📧 Email: [rohit.raparthi2003@gmail.com](mailto:rohit.raparthi2003@gmail.com)
-💼 GitHub: [https://github.com/RohitRaparthi](https://github.com/RohitRaparthi)
+- 📧 Email: [rohit.raparthi2003@gmail.com](mailto:rohit.raparthi2003@gmail.com)
+- 💼 GitHub: [https://github.com/RohitRaparthi](https://github.com/RohitRaparthi)
