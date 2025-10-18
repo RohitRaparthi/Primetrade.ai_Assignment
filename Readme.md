@@ -63,8 +63,8 @@ This project integrates both assignments into a single complete product — feat
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/your-username/scalable-webapp.git
-cd scalable-webapp
+git clone https://github.com/RohitRaparthi/Primetrade.ai_Assignment
+cd Primetrade.ai_Assignment
 ```
 ### 2️⃣ Backend Setup
 
